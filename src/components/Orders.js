@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {Button} from 'react-bootstrap'
 
  function Order(){
-const [orderList, setList] =useState([{id:1, message:'it works ', direccion:'mirave', name:'ayelen'}])
+const [orderList, setList] =useState([{id:1, message:'Article ', direccion:'false street 123', name:'Susan'}])
 const [input, setInput]=useState('');
 const [name, setName]=useState('');
 const [direccion, setDireccion]=useState('');
