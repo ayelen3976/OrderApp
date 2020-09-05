@@ -5,7 +5,7 @@ return(
     
    <div className='divpe' > 
  
-   <p>   <button className='buttonb'  class="btn btn-light" onClick={()=>deleteUl(id)}>x</button>{id})Name: {name}- Order: {message} - <span>  </span> Direction: {direccion}</p>
+   <p>   <button className='buttonb'  class="btn btn-light" onClick={()=>deleteUl(id)}>x</button>{id}) Name: {name}- Order: {message} - <span>  </span> Direction: {direccion}</p>
     </div>
     )
    

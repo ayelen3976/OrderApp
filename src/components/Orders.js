@@ -7,15 +7,15 @@ import {Button} from 'react-bootstrap'
  function Order(){
 const [orderList, setList] =useState([{id:1, message:'it works ', direccion:'mirave', name:'ayelen'}])
 const [input, setInput]=useState('');
-const [Name, setName]=useState('');
+const [name, setName]=useState('');
 const [direccion, setDireccion]=useState('');
 
 
 
-const handleSubmit = (event, orderList, setList, input, setInput, direccion, setDireccion, Name, setName) =>{
+const handleSubmit = (event, orderList, setList, input, setInput, direccion, setDireccion, name, setName) =>{
        event.preventDefault();
        const id= (orderList.length) ? orderList[orderList.length - 1].id + 1 : 0
-       setList([...orderList, {id:id, message:input, direccion:direccion, Name:Name}])
+       setList([...orderList, {id:id, message:input, direccion:direccion, name:name}])
        setInput('')
        setDireccion('')
        setName('')
@@ -42,8 +42,8 @@ return (
   <div>
          <nav>  <h2 class>List your orders</h2></nav>
        
-       <form onSubmit={(e)=>handleSubmit(e, orderList, setList, input, setInput, direccion, setDireccion, Name, setName)} >
-      <input value={Name} onChange={handleChange3} placeholder='Name...'></input>
+       <form onSubmit={(e)=>handleSubmit(e, orderList, setList, input, setInput, direccion, setDireccion, name, setName)} >
+      <input value={name} onChange={handleChange3} placeholder='name...'></input>
        <textarea value={input} onChange={handleChange} placeholder='Order...'> </textarea>  
        <input value={direccion} onChange={handleChange2} placeholder='Direction...'></input>
       <button  class="btn btn-outline-light">ADD</button>     
